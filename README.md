@@ -2,7 +2,7 @@
 
 A comprehensive Steam game launcher plugin for Flow Launcher that allows you to launch your Steam games directly from the launcher interface.
 
-![Steam Game Launcher in Action](sample.png)
+![Steam Game Launcher in Action](https://via.placeholder.com/800x400/0078D4/FFFFFF?text=Steam+Game+Launcher+Screenshot)
 
 *Sample screenshot showing the plugin in action with game icons and search results*
 
@@ -155,7 +155,7 @@ No manual configuration needed!
 ### Project Structure
 ```
 SteamLauncher-1.0.0/
-├── main.py              # Core plugin logic (652 lines)
+├── main.py              # Core plugin logic (664 lines)
 ├── plugin.json          # Flow Launcher configuration
 ├── requirements.txt     # Python dependencies
 ├── test_plugin.py       # Test suite
