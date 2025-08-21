@@ -2,7 +2,7 @@
 
 A comprehensive Steam game launcher plugin for Flow Launcher that allows you to launch your Steam games directly from the launcher interface.
 
-![Steam Game Launcher in Action](https://via.placeholder.com/800x400/0078D4/FFFFFF?text=Steam+Game+Launcher+Screenshot)
+![Steam Game Launcher in Action](sample.png)
 
 *Sample screenshot showing the plugin in action with game icons and search results*
 
