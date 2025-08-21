@@ -1,0 +1,12 @@
+{
+  "ID": "com.steam.launcher.plugin",
+  "ActionKeyword": "steam",
+  "Name": "Steam Game Launcher",
+  "Description": "Launch Steam games directly from Flow Launcher with automatic library discovery and Non-Steam game support",
+  "Author": "anshc22",
+  "Version": "1.0.0",
+  "Language": "python",
+  "Website": "https://store.steampowered.com",
+  "IcoPath": "icon.png",
+  "ExecuteFileName": "main.py"
+}
