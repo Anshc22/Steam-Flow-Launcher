@@ -2,7 +2,7 @@
 
 A comprehensive Steam game launcher plugin for Flow Launcher that allows you to launch your Steam games directly from the launcher interface.
 
-![Steam Game Launcher in Action](Final.png)
+![Steam Game Launcher in Action](final.png)
 
 *Screenshot showing the plugin in action with game icons and search results*
 
@@ -30,18 +30,6 @@ A comprehensive Steam game launcher plugin for Flow Launcher that allows you to 
 - Shows playtime and last played information
 - **Game Icons**: Displays actual game icons/cover art in search results
 - Automatic icon detection from Steam's cache and game directories
-
-### 🎨 Icon Features
-- **Icon Quality**: Game icons are automatically optimized for display:
-  - Original icons from Steam's cache (typically 640x360 resolution)
-  - Automatically resized to 384x384 maintaining aspect ratio (doubled size for maximum visibility)
-  - Optimized PNG format for better quality and visibility
-  - Cached optimized versions for faster subsequent loads
-
-- **Icon Size**: The size of icons in Flow Launcher search results is controlled by Flow Launcher's interface settings. The plugin provides optimized, high-quality icons that will display well at any size:
-  - High-resolution Steam cache icons are automatically optimized
-  - Maintains aspect ratio and visual quality
-  - If you need larger icons, consider adjusting Flow Launcher's zoom settings or theme
 
 ## Installation
 
@@ -91,6 +79,17 @@ The plugin automatically finds game icons by checking:
 2. Game installation directories
 3. Steam's main directories
 4. Falls back to default plugin icon if no game-specific icon is found
+
+**Icon Quality**: Game icons are automatically optimized for display:
+- Original icons from Steam's cache (typically 640x360 resolution)
+- Automatically resized to 384x384 maintaining aspect ratio (doubled size for maximum visibility)
+- Optimized PNG format for better quality and visibility
+- Cached optimized versions for faster subsequent loads
+
+**Icon Size**: The size of icons in Flow Launcher search results is controlled by Flow Launcher's interface settings. The plugin provides optimized, high-quality icons that will display well at any size:
+- High-resolution Steam cache icons are automatically optimized
+- Maintains aspect ratio and visual quality
+- If you need larger icons, consider adjusting Flow Launcher's zoom settings or theme
 
 ## Requirements
 
@@ -155,12 +154,11 @@ No manual configuration needed!
 ### Project Structure
 ```
 SteamLauncher-1.0.0/
-├── main.py              # Core plugin logic (664 lines)
-├── plugin.json          # Flow Launcher configuration
+├── main.py              # Main plugin logic
+├── plugin.json          # Plugin configuration
 ├── requirements.txt     # Python dependencies
-├── test_plugin.py       # Test suite
-├── README.md           # This file
-└── icon.png            # Plugin icon placeholder
+├── icon.png            # Plugin icon
+└── README.md           # This file
 ```
 
 ### Key Components
@@ -175,11 +173,6 @@ SteamLauncher-1.0.0/
 - Registry-based Steam path detection
 - VDF file parsing for game metadata
 - Binary shortcut file parsing for Non-Steam games
-
-#### Icon System
-- Multi-location icon detection
-- Automatic icon optimization and resizing
-- Support for both Steam and Non-Steam game icons
 
 #### Search Algorithm
 - Multi-tier scoring system
@@ -198,9 +191,7 @@ This plugin is provided as-is for personal use.
 - Game search and launch
 - Non-Steam game support
 - Multiple library support
-- Game icon display with automatic optimization
-- Security scanning with Semgrep
-- Comprehensive documentation
+- Smart search scoring
 
 ## Contributing
 
