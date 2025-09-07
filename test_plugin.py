@@ -32,7 +32,7 @@ def test_steam_detection():
 
 def test_library_discovery():
     """Test Steam library discovery"""
-    print("\\n📚 Testing library discovery...")
+    print("\n📚 Testing library discovery...")
     steam_manager = SteamLibraryManager()
 
     if not steam_manager.steam_path:
@@ -53,7 +53,7 @@ def test_library_discovery():
 
 def test_game_search():
     """Test game search functionality"""
-    print("\\n🔍 Testing game search...")
+    print("\n🔍 Testing game search...")
     steam_manager = SteamLibraryManager()
 
     if not steam_manager.steam_path:
@@ -83,7 +83,7 @@ def test_game_search():
 
 def test_query_function():
     """Test the main query function"""
-    print("\\n🔍 Testing query function...")
+    print("\n🔍 Testing query function...")
 
     try:
         # Test empty query
@@ -107,7 +107,7 @@ def test_query_function():
 
 def test_non_steam_games():
     """Test Non-Steam game detection"""
-    print("\\n🎮 Testing Non-Steam game detection...")
+    print("\n🎮 Testing Non-Steam game detection...")
     steam_manager = SteamLibraryManager()
 
     if not steam_manager.steam_path:
@@ -128,7 +128,7 @@ def test_non_steam_games():
 
 def test_game_icons():
     """Test game icon detection"""
-    print("\\n🎨 Testing game icon detection...")
+    print("\n🎨 Testing game icon detection...")
     steam_manager = SteamLibraryManager()
 
     if not steam_manager.steam_path:
@@ -144,7 +144,7 @@ def test_game_icons():
         games_without_icons = 0
 
         for game in all_games:
-            print(f"\\n   Game: {game.name}")
+            print(f"\n   Game: {game.name}")
             print(f"   AppID: {game.appid}")
             print(f"   Icon Path: {game.icon_path}")
 
@@ -166,13 +166,13 @@ def test_game_icons():
                 print(f"   ⚠️  No icon found (using default)")
                 games_without_icons += 1
 
-        print(f"\\n📊 Icon Summary:")
+        print(f"\n📊 Icon Summary:")
         print(f"   Games with icons: {games_with_icons}")
         print(f"   Games without icons: {games_without_icons}")
         print(f"   Icon coverage: {(games_with_icons / len(all_games) * 100):.1f}%")
 
         # Also test the query function to see what icons are actually being returned
-        print(f"\\n🔍 Testing query function icons:")
+        print(f"\n🔍 Testing query function icons:")
         results = query("")
         for result in results:
             if result.get('Title', '') != 'Steam Game Launcher':  # Skip header
@@ -186,7 +186,7 @@ def test_game_icons():
     return True
 
 def run_full_test():
-    \"\"\"Run complete test suite\"\"\"
+    """Run complete test suite"""
     print("🚀 Steam Game Launcher Plugin Test Suite")
     print("=" * 50)
 
@@ -210,7 +210,7 @@ def run_full_test():
             print(f"❌ Test {test.__name__} crashed: {e}")
             traceback.print_exc()
 
-    print("\\n" + "=" * 50)
+    print("\n" + "=" * 50)
     print(f"📊 Test Results: {passed}/{total} tests passed")
 
     if passed == total:
